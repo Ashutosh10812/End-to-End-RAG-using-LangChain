@@ -12,7 +12,7 @@ list_of_files=[
     "requirements.txt",
     "setup.py",
     "app.py",
-    "research/trails.ipynb",
+    "research/trail.ipynb",
 ]
 
 for filepath in list_of_files:

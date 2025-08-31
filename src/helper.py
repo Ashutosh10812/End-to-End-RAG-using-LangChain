@@ -31,7 +31,7 @@ def get_vector_store(text_chunks):
     print("Number of text chunks:", len(text_chunks))
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     if not text_chunks:
-        raise ValueError("No text chunks to embed. Check your PDF parsing logic.")
+        raise ValueError("No text chunks to embedd. Check your PDF parsing logic.")
     vector_store = FAISS.from_texts(text_chunks, embedding=embeddings)
     vector_store.save_local("faiss_index")
 
